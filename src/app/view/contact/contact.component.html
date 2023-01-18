@@ -1,0 +1,25 @@
+    <div class="form">
+        <h2>
+            მოგვაწოდეთ თქვენი ინფორმაცია
+        </h2>
+        <mat-form-field appearance="fill">
+            <mat-label>სახელი</mat-label>
+            <input matInput [(ngModel)]="name" >
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>გვარი</mat-label>
+            <input matInput [(ngModel)]="lastName" >
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>ქალაქი</mat-label>
+            <mat-select [(ngModel)]="city" >
+                <mat-option value="თბილისი">თბილისი</mat-option>
+                <mat-option value="London">ლონდონი</mat-option>
+                <mat-option value="Berlin">ბერლინი</mat-option>
+            </mat-select>
+        </mat-form-field>
+       
+        <button mat-button color="primary" (click)="logValue();" >გაგზავნა</button>
+    </div>
+
+  

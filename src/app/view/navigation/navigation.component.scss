@@ -1,0 +1,27 @@
+header {
+    padding: 10px;
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 20px;
+            list-style-type: none;
+            gap: 20px;
+            li {
+                text-transform: capitalize;
+                transition: .5s;
+                :hover {
+                    color: rgb(206, 35, 63);
+                }
+                a {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

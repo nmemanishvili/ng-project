@@ -1,0 +1,20 @@
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span> ჩემი აპლიკაცია</span>
+</mat-toolbar>
+
+<mat-drawer-container class="example-container" hasBackdrop="true">
+  <mat-drawer #drawer mode="push"><app-navigation></app-navigation></mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+<app-footer></app-footer>
+
+
+
+
+
